@@ -17,7 +17,10 @@ elif operacao == "3":
           resultado = num * num2
           print("Resultado dos números é ",resultado)
 elif operacao == "4":
-          resultado = num / num2
-          print("Resultado dos números é ",resultado)
+          if num2 == 0:
+                  print("O número não pode ser dividido por 0")
+          else:        
+                  resultado = num / num2
+                  print("Resultado dos números é ",resultado)
 else:
       print("nenhuma opção válida")
